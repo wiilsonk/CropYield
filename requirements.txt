@@ -1,4 +1,4 @@
 pandas
-tensor-flow
+tensorflow
 scikit-learn
 seaborn
