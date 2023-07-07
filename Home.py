@@ -54,7 +54,7 @@ st.button(
     label="Predict",
     on_click=onClick
 )
-image_file = "Predicted_values.png"
+image_file = "Predicted_values.PNG"
 if __name__ == "__main__":
   add_image(image_file)
 "The model uses Data from FAO and The Word Data Bank"
