@@ -7,10 +7,9 @@ model = load_model("./model/dlmodel.h5")
 
 # Return a data model that is standardised
 def standardise(data: CropYieldModel) -> CropYieldModel :
-
-    data.rainfall = data.rainfall / 3137.584672529126
-    data.pesticides = data.pesticides / -196.3119315471652
-    data.temp = data.temp / -24.76292187351093
+    data.rainfall = (data.rainfall - 1149) / 709.8
+    data.pesticides = (data.pesticides - 37076) / 59958
+    data.temp = (data.temp - 20.542) / 6.312
     data.rainfall = float(data.rainfall)
     data.pesticides = float(data.pesticides)
     data.temp = float(data.temp)
