@@ -13,12 +13,13 @@ xmodel = CropYieldModel()
 "# Maize Yield predictor for Zimbabwe! "
 
 # AN image of crops
-image_file = "my_image.jpg"
+image_file = "mynew.jpg"
 def add_image(image_file):
   st.image(image_file, caption="Maximise crop Yield with AI")
 
 #where the image was
-
+if __name__ == "__main__":
+  add_image(image_file)
 
 # ui to allow user input
 "# Rainfall in mm"
