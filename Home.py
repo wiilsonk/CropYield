@@ -17,8 +17,7 @@ image_file = "my_image.jpg"
 def add_image(image_file):
   st.image(image_file, caption="Maximise crop Yield with AI")
 
-if __name__ == "__main__":
-  add_image(image_file)
+#where the image was
 
 
 # ui to allow user input
