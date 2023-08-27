@@ -1,8 +1,11 @@
 import streamlit as st
 from sys import path
+from chatgpt import ChatGPT
+
 
 path.append("./CropYieldModel.py")
 path.append("./utils.py")
+
 
 from CropYieldModel import CropYieldModel
 from utils import predict_yield 
@@ -11,6 +14,16 @@ from utils import predict_yield
 xmodel = CropYieldModel()
 
 "# Maize Yield predictor for Zimbabwe! "
+
+chatbot = ChatGPT()
+def chatbot_widget():
+    st.subheader('Chat with the Bot')
+    user_input = st.text_input('Enter your message:')
+    if st.button('Send'):
+        if user_input!= '':
+            response = chatbot.get_response(user_input)
+            st.write(response)
+
 
 # AN image of crops
 image_file = "mynew.jpg"
@@ -57,6 +70,7 @@ st.button(
 image_file = "Predicted_values.PNG"
 if __name__ == "__main__":
   add_image(image_file)
+  chatbot_widget()
 "The model uses Data from FAO and The Word Data Bank"
 "More improvements will be made to the model in the near future"
 "This model was built by : Wilson Katsande & Tinevimbo Tasara"
