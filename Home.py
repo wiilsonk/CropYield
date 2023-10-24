@@ -1,6 +1,5 @@
 import streamlit as st
 from sys import path
-from chatgpt import ChatGPT
 
 
 path.append("./CropYieldModel.py")
@@ -14,15 +13,6 @@ from utils import predict_yield
 xmodel = CropYieldModel()
 
 "# Maize Yield predictor for Zimbabwe! "
-
-chatbot = ChatGPT()
-def chatbot_widget():
-    st.subheader('Chat with the Bot')
-    user_input = st.text_input('Enter your message:')
-    if st.button('Send'):
-        if user_input!= '':
-            response = chatbot.get_response(user_input)
-            st.write(response)
 
 
 # AN image of crops
