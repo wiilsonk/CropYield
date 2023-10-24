@@ -2,4 +2,3 @@ pandas
 tensorflow
 scikit-learn
 seaborn
-chatgpt
