@@ -60,7 +60,7 @@ st.button(
 image_file = "Predicted_values.PNG"
 if __name__ == "__main__":
   add_image(image_file)
-  chatbot_widget()
+
 "The model uses Data from FAO and The Word Data Bank"
 "More improvements will be made to the model in the near future"
 "This model was built by : Wilson Katsande & Tinevimbo Tasara"
