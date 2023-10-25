@@ -58,9 +58,9 @@ st.button(
     on_click=onClick
 )
 image_file = "Predicted_values.PNG"
-if __name__ == "__main__":
-  add_image(image_file)
+st.image(image_file, caption="Maximise crop Yield with AI")
+
 
 "The model uses Data from FAO and The Word Data Bank"
 "More improvements will be made to the model in the near future"
-"This model was built by : Wilson Katsande & Tinevimbo Tasara"
+"This model was built by : Wilson Katsande "
