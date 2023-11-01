@@ -51,7 +51,7 @@ def onClick():
 # display results
 
 def displayResults(res : float):
-    st.write("Highest Possible Yield : " + str(res))
+    st.warning("Highest Possible Yield : " + str(res))
 
 st.button(
     label="Predict",
