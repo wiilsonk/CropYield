@@ -58,7 +58,7 @@ st.button(
     on_click=onClick
 )
 image_file = "Predicted_values.PNG"
-st.image(image_file, caption="Maximise crop Yield with AI")
+
 
 
 "The model uses Data from FAO and The Word Data Bank"
