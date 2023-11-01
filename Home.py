@@ -25,7 +25,7 @@ if __name__ == "__main__":
   add_image(image_file)
 
 # ui to allow user input
-"# Rainfall in mm"
+"# Rainfall in mm/year"
 xmodel.rainfall = st.number_input(
     label="Rainfall",
     step=10
