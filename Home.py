@@ -12,7 +12,7 @@ from utils import predict_yield
 # define the features of the model
 xmodel = CropYieldModel()
 
-"# Maize Yield predictor for Zimbabwe! "
+"# Maize Yield predictor using AI "
 
 
 # AN image of crops
