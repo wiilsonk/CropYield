@@ -13,8 +13,6 @@ from utils import predict_yield
 xmodel = CropYieldModel()
 
 "# Maize Yield predictor using AI "
-"Location : South Africa"
-"Crop : Maize"
 
 # AN image of crops
 image_file = "mynew.jpg"
@@ -25,6 +23,9 @@ def add_image(image_file):
 if __name__ == "__main__":
   add_image(image_file)
 
+
+"Location : South Africa"
+"Crop : Maize"
 # ui to allow user input
 "# Rainfall in mm/year"
 xmodel.rainfall = st.number_input(
