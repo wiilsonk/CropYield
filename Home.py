@@ -13,7 +13,8 @@ from utils import predict_yield
 xmodel = CropYieldModel()
 
 "# Maize Yield predictor using AI "
-
+"Location : South Africa"
+"Crop : Maize"
 
 # AN image of crops
 image_file = "mynew.jpg"
